@@ -10,6 +10,8 @@ import {
 import BorderEffect from "../BorderEffect";
 import Link from "next/link";
 import NeonEffect from "../NeonEffect";
+import Image from "next/image";
+import { logo } from "@/app/assets/images";
 
 const Footer = () => {
   return (
@@ -17,9 +19,12 @@ const Footer = () => {
       <NeonEffect left={false} right={false}>
         <div className="dark:bg-black-bg py-10">
           <div className="flex justify-center items-center ">
-            <h1 className="font-bold text-xl md:text-2xl bg-gradient-to-tr from-neon-greenish to-neon-blue to-80% bg-clip-text text-transparent">
+          <Link href="/" className="flex items-center gap-2">
+            <Image src={logo} alt="logo" className="w-16 container"/>
+            <span className="font-bold text-xl md:text-2xl text-neon-greenish">
               Website Logo
-            </h1>
+            </span>
+          </Link>
           </div>
           {/* middle */}
           <div className="grid md:grid-cols-2 gap-5 mt-5">

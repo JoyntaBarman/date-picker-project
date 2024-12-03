@@ -49,7 +49,7 @@ const DatePickerForm = () => {
         <NeonEffect left={false} right={false}>
           <button
             onClick={toggelDatePicker}
-            className="px-4 py-2 hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500 text-nowrap flex gap-4 items-center"
+            className="px-4 py-2 hover:text-neon-greenish duration-500 text-nowrap flex gap-4 items-center"
           >
             {startDate + " - " + endDate}
             <MdArrowDownward className="text-neon-blue" size={24} />
@@ -69,7 +69,7 @@ const DatePickerForm = () => {
                 <button
                   type="button"
                   onClick={handleToday}
-                  className="px-4 py-2 hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500 text-nowrap"
+                  className="px-4 py-2 hover:text-neon-greenish duration-500 text-nowrap"
                 >
                   Today
                 </button>
@@ -79,7 +79,7 @@ const DatePickerForm = () => {
                 <button
                   type="button"
                   onClick={handleLast7Days}
-                  className="px-4 py-2 hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500 text-nowrap"
+                  className="px-4 py-2 hover:text-neon-greenish duration-500 text-nowrap"
                 >
                   Last 7 Days
                 </button>
@@ -88,7 +88,7 @@ const DatePickerForm = () => {
                 <button
                   type="button"
                   onClick={handleLastMonth}
-                  className="px-4 py-2 hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500 text-nowrap"
+                  className="px-4 py-2 hover:text-neon-greenish duration-500 text-nowrap"
                 >
                   Last 1 Month
                 </button>
@@ -125,7 +125,7 @@ const DatePickerForm = () => {
               <NeonEffect>
                 <button
                   type="submit"
-                  className="px-4 py-2 hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500 text-nowrap"
+                  className="px-4 py-2 hover:text-neon-greenish duration-500 text-nowrap"
                 >
                   Apply
                 </button>

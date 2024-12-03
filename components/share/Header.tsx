@@ -22,7 +22,7 @@ const Header = () => {
           </p>
           <div className="mt-12">
             <NeonEffect>
-              <button className="text-xl font-semibold px-4 py-2 hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500 z-50">
+              <button className="text-xl font-semibold px-4 py-2 hover:text-neon-greenish duration-500 z-50">
                 Learn more
               </button>
             </NeonEffect>

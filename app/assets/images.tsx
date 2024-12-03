@@ -1,3 +1,4 @@
 import headerSVG from "./Header.svg";
+import logo from "./logo.png";
 
-export {headerSVG};
+export {headerSVG, logo};

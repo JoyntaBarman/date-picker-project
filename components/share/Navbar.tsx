@@ -5,6 +5,8 @@ import Link from "next/link";
 import NeonEffect from "../NeonEffect";
 import ToggleTheme from "../ToggleTheme";
 import { MdMenu } from "react-icons/md";
+import Image from "next/image";
+import { logo } from "@/app/assets/images";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,10 +24,11 @@ const Navbar = () => {
     <Container className="relative">
       <nav className="flex justify-between items-center gap-5 px-4 py-8 bg-medium-gray/60 dark:bg-black-bg text-very-light-gray relative z-50">
         <div>
-          <Link href="/">
-            <h1 className="font-bold text-xl md:text-2xl bg-gradient-to-tr from-neon-greenish to-neon-blue to-80% bg-clip-text text-transparent">
+          <Link href="/" className="flex items-center gap-2">
+            <Image src={logo} alt="logo" className="w-16 container"/>
+            <span className="font-bold text-xl md:text-2xl text-neon-greenish">
               Website Logo
-            </h1>
+            </span>
           </Link>
         </div>
         <div className="hidden md:block">
@@ -36,7 +39,7 @@ const Navbar = () => {
                   <Link
                     key={index}
                     href={link?.path}
-                    className="text-xl p-2 font-semibold hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500"
+                    className="text-xl p-2 font-semibold hover:text-neon-greenish duration-500"
                   >
                     {link?.text}
                   </Link>
@@ -50,7 +53,7 @@ const Navbar = () => {
           <NeonEffect>
             <Link
               href={"mailto:joyntabarman00@gmail.com"}
-              className="px-4 py-2 hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500"
+              className="px-4 py-2 hover:text-neon-greenish duration-500"
             >
               Contact Us
             </Link>
@@ -70,7 +73,7 @@ const Navbar = () => {
                   <Link
                     key={index}
                     href={link?.path}
-                    className=" p-2 font-semibold hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500"
+                    className=" p-2 font-semibold hover:text-neon-greenish duration-500"
                   >
                     {link?.text}
                   </Link>
