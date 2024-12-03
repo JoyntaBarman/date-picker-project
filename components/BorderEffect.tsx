@@ -13,7 +13,7 @@ const BorderEffect = ({ className }: Props) => {
     <span
     
       className={twMerge(
-        "block w-1/2 h-[2px] gradiantBGcolor backdrop-blur-3xl",
+        "block w-1/2 h-[2px] dark:gradiantBGcolor lightThemegradiantBGcolor backdrop-blur-3xl",
         className
       )}
     ></span>

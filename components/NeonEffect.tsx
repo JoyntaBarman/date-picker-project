@@ -19,9 +19,7 @@ const NeonEffect = ({
 }: Props) => {
   const parentRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    console.log(parentRef!.current?.clientHeight);
-  });
+ 
 
   return (
     <div
