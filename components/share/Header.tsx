@@ -10,7 +10,7 @@ const Header = () => {
         {/* <Image src={headerSVG} alt="skj"/> */}
         <div className="text-center flex flex-col items-center">
           <h1 className="lg:text-5xl text-3xl font-bold lg:w-2/4">
-            Let's See Your Talent in Action!
+            Let&apos;s See Your Talent in Action!
           </h1>
           <p className="lg:w-3/4 px-4 mt-10 text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quia
@@ -22,13 +22,14 @@ const Header = () => {
           </p>
           <div className="mt-12">
             <NeonEffect>
-              <button className="text-xl font-semibold px-4 py-2 hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500 z-50">Learn more</button>
-            </NeonEffect >
+              <button className="text-xl font-semibold px-4 py-2 hover:bg-gradient-to-tr hover:from-neon-greenish hover:to-neon-blue to-80% bg-clip-text hover:text-transparent duration-500 z-50">
+                Learn more
+              </button>
+            </NeonEffect>
           </div>
         </div>
-        <NeonCircle/>
+        <NeonCircle />
       </div>
-      
     </Container>
   );
 };

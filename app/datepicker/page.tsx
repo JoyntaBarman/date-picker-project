@@ -44,7 +44,7 @@ const DatePickerForm = () => {
   };
 
   return (
-    <div className="min-h-[500px] ">
+    <div className="min-h-[500px] p-4">
       <div className="w-64 mx-auto mt-24">
         <NeonEffect left={false} right={false}>
           <button
@@ -64,7 +64,7 @@ const DatePickerForm = () => {
         >
           <div className=" md:flex gap-4 ">
             {/* Buttons */}
-            <div className=" flex md:flex-col gap-8">
+            <div className=" flex md:flex-col flex-wrap md:flex-nowrap gap-8">
               <NeonEffect left={false} right={false}>
                 <button
                   type="button"
@@ -95,7 +95,7 @@ const DatePickerForm = () => {
               </NeonEffect>
             </div>
             {/* Dates */}
-            <div className="flex justify-between w-full gap-5 mt-10 md:mt-0">
+            <div className="flex justify-between flex-wrap md:flex-nowrap w-full gap-5 mt-10 md:mt-0">
               <div className="flex flex-col w-full ">
                 <input
                   type="date"

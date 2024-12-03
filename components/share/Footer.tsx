@@ -24,18 +24,18 @@ const Footer = () => {
           {/* middle */}
           <div className="grid md:grid-cols-2 gap-5 mt-5">
             <div className="flex gap-4 items-center text-2xl text-medium-gray justify-center">
-              <FaTwitter />
-              <FaInstagram />
-              <FaFacebook />
-              <FaGoogle />
-              <FaWhatsapp />
+              <FaTwitter className="cursor-pointer"/>
+              <FaInstagram className="cursor-pointer" />
+              <FaFacebook className="cursor-pointer"/>
+              <FaGoogle className="cursor-pointer"/>
+              <FaWhatsapp className="cursor-pointer"/>
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-5">
               <h1 className="text-2xl text-medium-gray">Subscribe</h1>
 
               <div className="relative">
                 <input
-                  className="bg-transparent outline-none px-4 py-2"
+                  className="bg-transparent outline-none px-4 py-2 placeholder:text-neon-blue"
                   placeholder="Enter your email."
                 />
                 <BorderEffect className="w-full absolute top-0" />

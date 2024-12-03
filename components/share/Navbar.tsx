@@ -63,8 +63,9 @@ const Navbar = () => {
           </button>
 
           {/* mobile menu */}
-          {isVisible && <div className="absolute top-full right-0 bg-medium-gray rounded-lg py-2 px-4 flex flex-col z-50"> 
-            {navlinks.map((link, index) => {
+          {isVisible && (
+            <div className="absolute top-full right-0 bg-medium-gray rounded-lg py-2 px-4 flex flex-col z-50">
+              {navlinks.map((link, index) => {
                 return (
                   <Link
                     key={index}
@@ -74,10 +75,12 @@ const Navbar = () => {
                     {link?.text}
                   </Link>
                 );
-              })}</div>}
+              })}
+            </div>
+          )}
         </div>
       </nav>
-      <div className="absolute w-full h-full bottom-0 opacity-30 blur bg-gradient-to-t from-neon-blue to-transparent z-10"/>
+      <div className="absolute w-full h-full bottom-0 opacity-30 blur bg-gradient-to-t from-neon-blue to-transparent z-10" />
     </Container>
   );
 };
