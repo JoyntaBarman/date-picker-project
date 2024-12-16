@@ -1,7 +1,4 @@
 import React from "react";
-import NeonEffect from "./NeonEffect";
-import Link from "next/link";
-import NeonCircle from "./NeonCircle";
 import Container from "./Container";
 import { FaCode } from "react-icons/fa";
 import SectionTitle from "./SelectionTitle";
@@ -21,12 +18,14 @@ const About = () => {
     { title: "ExpressJS", link: "https://expressjs.com/" },
   ];
   return (
-    <Container >
-      <div id="about" className="w-full flex justify-center items-center relative bg-medium-gray/40 dark:bg-black-bg dark:text-very-light-gray overflow-hidden">
+    <Container>
+      <div
+        id="about"
+        className="w-full flex justify-center items-center relative bg-medium-gray/40 dark:bg-black-bg dark:text-very-light-gray overflow-hidden"
+      >
         {/* <Image src={headerSVG} alt="skj"/> */}
         <div className="text-center flex flex-col items-center py-24">
-          
-          <SectionTitle title="About Me"/>
+          <SectionTitle title="About Me" />
           <p className="lg:w-3/4 px-4 mt-5">
             Hello! My name is Joynta Kumar Barman, and I am passionate about
             creating engaging and efficient web applications. My journey in web

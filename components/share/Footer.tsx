@@ -1,14 +1,6 @@
 import React from "react";
 import Container from "../Container";
-import {
-  FaFacebook,
-  FaGithub,
-  FaGoogle,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import BorderEffect from "../BorderEffect";
 import Link from "next/link";
 import NeonEffect from "../NeonEffect";
@@ -50,16 +42,27 @@ const Footer = () => {
               </button>
             </div>
             <div className="flex gap-4 items-center text-2xl text-medium-gray justify-center">
-              <Link href={"/"} target="_blank" className="hover:text-neon-blue/80 duration-300">
+              <Link
+                href={"/"}
+                target="_blank"
+                className="hover:text-neon-blue/80 duration-300"
+              >
                 <FaLinkedin />
               </Link>
-              <Link href={"/https://github.com/joyntabarman"} target="_blank" className="hover:text-neon-blue/80 duration-300">
+              <Link
+                href={"/https://github.com/joyntabarman"}
+                target="_blank"
+                className="hover:text-neon-blue/80 duration-300"
+              >
                 <FaGithub />
               </Link>
-              <Link href={"https://wa.me/+8801572913528"} target="_blank" className="hover:text-neon-blue/80 duration-300">
+              <Link
+                href={"https://wa.me/+8801572913528"}
+                target="_blank"
+                className="hover:text-neon-blue/80 duration-300"
+              >
                 <FaWhatsapp />
               </Link>
-              
             </div>
           </div>
           {/* End */}
